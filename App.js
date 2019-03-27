@@ -1,14 +1,4 @@
-// OGÓLNA FUNKCJA
-/*
-function randomString() {
-	var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ'.split();
-	var str = '', i;
-	for (i = 0; i < 10; i++) {
-	  str += chars[Math.floor(Math.random() * chars.length)];
-	}
-	return str;
-}
-*/
+
 
 // generator templatek (z wykorzystaniem mustache.js)
 function generateTemplate(name, data, basicElement) {
@@ -32,7 +22,6 @@ var myHeaders = {
 
 fetch(prefix + baseUrl + '/board', { headers: myHeaders })
   .then(function(resp) {
-      console.log(' ---- yes ---- ');
     return resp.json();
   })
   .then(function(resp) {
