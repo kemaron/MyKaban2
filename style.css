@@ -17,6 +17,7 @@ body {margin: 0;}
 /* BOARD */
 .board h1 {
   margin-left: 8px;
+  list-style-type: none;
 }
 .column-container {
   display: flex;
@@ -35,6 +36,8 @@ body {margin: 0;}
   list-style: none;
   position: relative;
 }
+
+
 .column-add-card {
   cursor: pointer;
   text-decoration: underline;
@@ -51,9 +54,11 @@ body {margin: 0;}
   padding: 4px;
   overflow: hidden;
   position: relative;
+  margin-top: 10px;
 }
-.card-list {
+.column-card-list {
   list-style: none;
+  min-height: 21vh;
   margin: 5px;
   padding: 0px;
 }
